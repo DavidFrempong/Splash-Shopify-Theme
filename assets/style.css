@@ -141,6 +141,10 @@ table {
 .header1 a:hover {
     color: #e63b49;
 }
+.header1__collections-nav {
+    margin-bottom: 0;
+    padding-left: 0;
+}
 .header1__collections-nav a {
     padding-right: 20px;
     display: inline-block;
@@ -200,6 +204,10 @@ table {
 .header2 a:hover {
     color: #e63b49;
 }
+.header2__collections-nav {
+    margin-bottom: 0;
+    padding-left: 0;
+}
 .header2__collections-nav a {
     padding-right: 20px;
     display: inline-block;
@@ -254,6 +262,10 @@ table {
 }
 .header3 a:hover {
     color: #e63b49;
+}
+.header3__collections-nav {
+    margin-bottom: 0;
+    padding-left: 0;
 }
 .header3__collections-nav a {
     padding-right: 20px;
@@ -2372,13 +2384,13 @@ progress {
     --bs-aspect-ratio: 100%;
 }
 .ratio-4x3 {
-    --bs-aspect-ratio: calc(3 / 4 * 100%);
+    --bs-aspect-ratio: 75%;
 }
 .ratio-16x9 {
-    --bs-aspect-ratio: calc(9 / 16 * 100%);
+    --bs-aspect-ratio: 56.25%;
 }
 .ratio-21x9 {
-    --bs-aspect-ratio: calc(9 / 21 * 100%);
+    --bs-aspect-ratio: 42.8571428571%;
 }
 .fixed-top {
     top: 0;
