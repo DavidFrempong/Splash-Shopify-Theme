@@ -1,5 +1,127 @@
 {
   "sections": {
+    "1660074830c4809a8b": {
+      "type": "hero-one",
+      "blocks": {
+        "1660074830327ce8e8-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Title",
+            "title_size": "100vh"
+          }
+        },
+        "1660074830327ce8e8-1": {
+          "type": "paragraph",
+          "settings": {
+            "paragraph": "This is where your message will be."
+          }
+        },
+        "1660074830327ce8e8-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1660074830327ce8e8-0",
+        "1660074830327ce8e8-1",
+        "1660074830327ce8e8-2"
+      ],
+      "settings": {
+        "hero_height": "100vh",
+        "opacity": 50,
+        "info_alignment": "right"
+      }
+    },
+    "166007485739b9926f": {
+      "type": "collection-group",
+      "blocks": {
+        "16600748576ab52966-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "16600748576ab52966-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "16600748576ab52966-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "16600748576ab52966-0",
+        "16600748576ab52966-1",
+        "16600748576ab52966-2"
+      ],
+      "settings": {
+        "container_shape": "square",
+        "image_fit": "contain",
+        "background": "#ffffff",
+        "opacity": 100,
+        "show_title": true,
+        "info_alignment": "right",
+        "xxl_col": "col-xxl-4",
+        "xl_col": "col-xl-4",
+        "lg_col": "col-lg-4",
+        "md_col": "col-md-4",
+        "sm_col": "col-sm-2",
+        "desktop_image_width": "medium",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1660074841ce3fe930": {
+      "type": "hero-two",
+      "settings": {
+        "background1": "#000000",
+        "opacity1": 50,
+        "button_label1": "Button label",
+        "button_link1": "",
+        "background2": "#000000",
+        "opacity2": 50,
+        "button_label2": "Button label",
+        "button_link2": ""
+      }
+    },
+    "1660074900583c2da9": {
+      "type": "collection-products-1",
+      "settings": {
+        "collection": "",
+        "total_products": 16,
+        "container_shape": "rectangle",
+        "image_fit": "cover",
+        "background": "#edeff5",
+        "opacity": 100,
+        "show_title": true,
+        "show_price": true,
+        "info_alignment": "right",
+        "xxl_col": "col-xxl-3",
+        "xl_col": "col-xl-3",
+        "lg_col": "col-lg-3",
+        "md_col": "col-md-3",
+        "sm_col": "col-sm-6",
+        "desktop_image_width": "medium",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -29,6 +151,10 @@
     }
   },
   "order": [
+    "1660074830c4809a8b",
+    "166007485739b9926f",
+    "1660074841ce3fe930",
+    "1660074900583c2da9",
     "featured_collection"
   ]
 }
