@@ -27,10 +27,10 @@
                     <div class="collection1__product-info">
                         <div class="collection1__product-details"
                         style="text-align: center; width: 100%">
-                            {%- section.settings.show_title == true -%}
-                            <span class="collection1__product-title">{{product.title}}</span>
+                            {%- if section.settings.show_title == true -%}
+                            <span class="collection1__product-title">{{block.settings.collection.title}}</span>
                             {%- endif -%}
-                            {%- section.settings.show_price == true -%}
+                            {%- if section.settings.show_price == true -%}
                             <span class="collection1__product-price">${{product.price}}</span>
                             {%- endif -%}
                         </div>
@@ -88,7 +88,7 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
                 {
                     "value": "circle",
                     "label": "Circle"
-                },
+                }
             ],
             "default": "square",
             "label": "Product Container Shape"
@@ -420,18 +420,18 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
                     "xl_col": "col-xl-4",
                     "lg_col": "col-lg-4",
                     "md_col": "col-md-4",
-                    "sm_col": "col-sm-2",
+                    "sm_col": "col-sm-2"
                 },
             "blocks": [
                 {
-                    "type": "featured collection"
+                    "type": "featured_collection"
                 },
                 {
-                    "type": "featured collection"
+                    "type": "featured_collection"
                 },
                 {
-                    "type": "featured collection"
-                },
+                    "type": "featured_collection"
+                }
             ]
         }
     ]
