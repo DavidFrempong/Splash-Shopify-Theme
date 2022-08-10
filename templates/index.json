@@ -224,7 +224,7 @@
         "hero_height": "50vh",
         "background": "#000000",
         "opacity": 50,
-        "info_alignment": "right"
+        "info_alignment": "center"
       }
     }
   },
