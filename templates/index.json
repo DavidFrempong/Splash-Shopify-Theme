@@ -164,6 +164,68 @@
         "button_label2": "Button label",
         "button_link2": ""
       }
+    },
+    "1660103196d759863e": {
+      "type": "collection-products-1",
+      "settings": {
+        "collection": "",
+        "total_products": 16,
+        "container_shape": "rectangle",
+        "image_fit": "cover",
+        "background": "#edeff5",
+        "opacity": 100,
+        "show_title": true,
+        "show_price": true,
+        "info_alignment": "right",
+        "xxl_col": "col-xxl-3",
+        "xl_col": "col-xl-3",
+        "lg_col": "col-lg-3",
+        "md_col": "col-md-3",
+        "sm_col": "col-sm-6",
+        "desktop_image_width": "medium",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "16601032124033fed3": {
+      "type": "hero-one",
+      "blocks": {
+        "1660103212e3a46f7d-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Title",
+            "title_size": "md"
+          }
+        },
+        "1660103212e3a46f7d-1": {
+          "type": "paragraph",
+          "settings": {
+            "paragraph": "Example message I ' m baby kogi cardigan kitsch hammock banjo. Typewriter viral man braid hot chicken, farm-to-table fashion axe intelligentsia lomo green juice ramps irony succulents."
+          }
+        },
+        "1660103212e3a46f7d-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1660103212e3a46f7d-0",
+        "1660103212e3a46f7d-1",
+        "1660103212e3a46f7d-2"
+      ],
+      "settings": {
+        "hero_height": "50vh",
+        "background": "#000000",
+        "opacity": 50,
+        "info_alignment": "right"
+      }
     }
   },
   "order": [
@@ -172,6 +234,8 @@
     "1660074841ce3fe930",
     "1660074900583c2da9",
     "featured_collection",
-    "1660103177d5b1af09"
+    "1660103177d5b1af09",
+    "1660103196d759863e",
+    "16601032124033fed3"
   ]
 }
