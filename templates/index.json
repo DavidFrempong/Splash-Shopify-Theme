@@ -31,6 +31,7 @@
       ],
       "settings": {
         "hero_height": "100vh",
+        "background": "#000000",
         "opacity": 50,
         "info_alignment": "right"
       }
@@ -86,6 +87,7 @@
     "1660074841ce3fe930": {
       "type": "hero-two",
       "settings": {
+        "hero_height": "50vh",
         "background1": "#000000",
         "opacity1": 50,
         "button_label1": "Button label",
