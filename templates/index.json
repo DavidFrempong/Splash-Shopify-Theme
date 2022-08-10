@@ -32,7 +32,7 @@
       "settings": {
         "hero_height": "100vh",
         "background": "#000000",
-        "opacity": 50,
+        "opacity": 100,
         "info_alignment": "center"
       }
     },
