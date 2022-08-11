@@ -26,13 +26,13 @@
         "id": "header_sticky",
         "label": "Fix Navigation Bar to Top of Page",
         "default": false
-      },    
+      },
       {
         "type": "checkbox",
         "id": "header_transparent",
         "label": "Make Navigation Bar transparent",
         "default": true
-      }  
+      }
     ]
   },
   {
