@@ -39,6 +39,45 @@
   assign body_font_bold_italic = body_font_bold | font_modify: 'style', 'italic'
   %}
 
+{% style %}
+:root {
+  --body-bg: {{ settings.body_bg }};
+  --announce-bar-default: #605e7d;
+}
+body {
+  background-color: var(--body-bg);
+}
+a:hover {
+  color: #f84c4c;
+}
+.fixed-nav.transparent-nav .header {
+  background: rgba(0, 0, 0, 0);
+}
+.fixed-nav.transparent-nav .header a {
+  color: #fff;
+}
+.fixed-nav.transparent-nav .header .header1__collection-link .collection-link__sub-links a,
+.fixed-nav.transparent-nav .header .header2__collection-link .collection-link__sub-links a,
+.fixed-nav.transparent-nav .header .header3__collection-link .collection-link__sub-links a {
+  color: #000;
+}
+.fixed-nav.transparent-nav .header .header1__collection-link .collection-link__sub-links a:hover,
+.fixed-nav.transparent-nav .header .header2__collection-link .collection-link__sub-links a:hover,
+.fixed-nav.transparent-nav .header .header3__collection-link .collection-link__sub-links a:hover {
+  color: red;
+}
+.fixed-nav .header {
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+}
+
+{% endstyle %}
+
+
+
+
+
   {% style %}
   {{ settings.type_body_font | font_face: font_display: 'swap' }}
   {{ body_font_bold | font_face: font_display: 'swap' }}
@@ -217,7 +256,51 @@
       rel="stylesheet" />
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
-    {{ 'style.css' | asset_url | stylesheet_tag }}
+    {{ 'vendors.css' | asset_url | stylesheet_tag }}
+    <!-- {{ 'style.css' | asset_url | stylesheet_tag }} -->
+
+
+{% style %}
+
+:root {
+  --body-bg: #f7f9fd;
+  --announce-bar-default: #605e7d;
+}
+body {
+  background-color: var(--body-bg);
+}
+a:hover {
+  color: #f84c4c;
+}
+.fixed-nav.transparent-nav .header {
+  background: rgba(0, 0, 0, 0);
+}
+.fixed-nav.transparent-nav .header a {
+  color: #fff;
+}
+.fixed-nav.transparent-nav .header .header1__collection-link .collection-link__sub-links a,
+.fixed-nav.transparent-nav .header .header2__collection-link .collection-link__sub-links a,
+.fixed-nav.transparent-nav .header .header3__collection-link .collection-link__sub-links a {
+  color: #000;
+}
+.fixed-nav.transparent-nav .header .header1__collection-link .collection-link__sub-links a:hover,
+.fixed-nav.transparent-nav .header .header2__collection-link .collection-link__sub-links a:hover,
+.fixed-nav.transparent-nav .header .header3__collection-link .collection-link__sub-links a:hover {
+  color: red;
+}
+.fixed-nav .header {
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+}
+
+
+{% endstyle %}
+
+
+
+
+
 
     {%- unless settings.type_body_font.system? -%}
     <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
@@ -238,7 +321,13 @@
     </script>
 </head>
 
-<body class="fixed-nav transparent-nav" class="gradient">
+<body class="{% if settings.header_sticky == true %}
+  fixed-nav 
+{% endif %}
+{% if settings.header_transparent == true %}
+  transparent-nav
+{% endif %}"
+class="gradient" style="background: var(--body-bg)">
   <a class="skip-to-content-link button visually-hidden" href="#MainContent">
     {{ "accessibility.skip_to_text" | t }}
   </a>

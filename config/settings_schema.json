@@ -8,8 +8,47 @@
     "theme_support_url": "https:\/\/support.shopify.com\/"
   },
   {
+    "name": "Header Settings",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Background of navigation bar"
+      },
+      {
+        "type": "color",
+        "id": "header_bg",
+        "default": "#f7f9fd",
+        "label": "Navigation Bar Background",
+        "info": "This is your background color for the navigation bar."
+      },
+      {
+        "type": "checkbox",
+        "id": "header_sticky",
+        "label": "Fix Navigation Bar to Top of Page",
+        "default": false
+      },    
+      {
+        "type": "checkbox",
+        "id": "header_transparent",
+        "label": "Make Navigation Bar transparent",
+        "default": true
+      }  
+    ]
+  },
+  {
     "name": "t:settings_schema.colors.name",
     "settings": [
+      {
+        "type": "header",
+        "content": "Styles Throughout Website"
+      },
+      {
+        "type": "color",
+        "id": "body_bg",
+        "default": "#f7f9fd",
+        "label": "Website Body Background",
+        "info": "This is your background color for the whole website."
+      },
       {
         "type": "header",
         "content": "t:settings_schema.colors.settings.header__1.content"
