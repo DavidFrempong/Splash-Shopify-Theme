@@ -71,13 +71,12 @@
 					{%- for block in section.blocks -%}
 					{% case block.type %}
 						{%- when 'heading' -%}
-							<h2 class="product-highlight__title product-highlight__title--{{- block.settings.title_size -}} 
-								color: {{section.settings.text_color}}">
+							<h2 class="product-highlight__title product-highlight__title--{{- block.settings.title_size -}}" style="color: {{section.settings.text_color}}">
 							 
 								{{ block.settings.title | escape }}</h2>
 						{%- when 'paragraph' -%}
 							<p class="product-highlight__paragraph"
-								color: {{section.settings.text_color}}>
+							style="color: {{section.settings.text_color}}">
 								{{ block.settings.paragraph | escape }}
 							</p>
 						{%- when 'button' -%}
