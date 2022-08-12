@@ -22,6 +22,13 @@
         "info": "This is your background color for the navigation bar."
       },
       {
+        "type": "color",
+        "id": "header_text_color",
+        "default": "#000000",
+        "label": "Navigation Bar Text Color",
+        "info": "This is the color of the text on the navigation bar."
+      },
+      {
         "type": "checkbox",
         "id": "header_sticky",
         "label": "Fix Navigation Bar to Top of Page",
