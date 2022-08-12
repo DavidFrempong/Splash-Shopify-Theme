@@ -22,6 +22,10 @@
         "info": "This is your background color for the navigation bar."
       },
       {
+        "type": "header",
+        "content": "Text color of navigation bar"
+      },
+      {
         "type": "color",
         "id": "header_text_color",
         "default": "#000000",
