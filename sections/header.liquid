@@ -27,7 +27,7 @@
   </ul>
 
   <div class="header1__logo">
-    <a href="{{ routes.root_url }}">
+    <a href="{{ routes.root_url }}" style="color: {{settings.header_text_color}}">
       {%- if section.settings.logo != blank -%}
       {%- assign image_size = section.settings.logo_width | append: 'x' -%}
       <img
