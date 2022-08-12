@@ -53,9 +53,25 @@ text-align: center;
 text-align: right;
 }
 
+.product-highlight-height--25vh{
+	height: 25vh;
+}
+
+.product-highlight-height--50vh{
+	height: 50vh;
+}
+
+.product-highlight-height--75vh{
+	height: 75vh;
+}
+
+.product-highlight-height--100vh{
+	height: 100vh;
+}
+
 </style>
 
-<div class="product-highlight product-highlight-aligned--{{ section.settings.info_alignment }}" style="background-color: {{section.settings.background}}">
+<div class="product-highlight product-highlight-aligned--{{ section.settings.info_alignment }} product-highlight-height--{{ section.settings.hero_height }}" style="background-color: {{section.settings.background}}">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6">
