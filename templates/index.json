@@ -7,7 +7,7 @@
           "type": "heading",
           "settings": {
             "title": "Title",
-            "title_size": "md"
+            "title_size": "lg"
           }
         },
         "1660183857b7a6ec36-1": {
@@ -31,9 +31,10 @@
       ],
       "settings": {
         "hero_height": "100vh",
-        "background": "#000000",
+        "background": "#e0e0e0",
+        "text_color": "#000000",
         "opacity": 50,
-        "info_alignment": "right"
+        "info_alignment": "left"
       }
     },
     "1660074830c4809a8b": {
