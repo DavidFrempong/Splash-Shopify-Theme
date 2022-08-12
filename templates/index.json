@@ -31,8 +31,8 @@
       ],
       "settings": {
         "hero_height": "100vh",
-        "background": "#e0e0e0",
-        "text_color": "#000000",
+        "background": "#979797",
+        "text_color": "#efefef",
         "opacity": 50,
         "info_alignment": "left"
       }
