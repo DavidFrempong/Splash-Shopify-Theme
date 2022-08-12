@@ -1,6 +1,6 @@
 .header1 {
     /* background: #fcfcfc; */
-    color: #1b1b1b;
+    /* color: #1b1b1b; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -10,11 +10,11 @@
 }
 .header1 a {
     text-decoration: none;
-    color: #2c2952;
+    /* color: #2c2952; */
     font-weight: 500;
 }
 .header1 a:hover {
-    color: #e63b49;
+    /* color: #e63b49; */
 }
 .header1__collections-nav {
     margin-bottom: 0;

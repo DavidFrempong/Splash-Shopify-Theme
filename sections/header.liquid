@@ -2,9 +2,11 @@
 {% when 'header1' %}
   {{ 'Header1.css' | asset_url | stylesheet_tag }}
 <!-- STARTING HEADER 1 -->
-<header class="header header1" style="background-color: {{settings.header_bg}}">
+<header class="header header1" style="background-color: {{settings.header_bg}}; color: {{settings.header_text_color}} ">
 
-  <ul class="header1__collections-nav" style="color: {{settings.header_text_color}}">
+  <ul class="header1__collections-nav"
+     style="color: {{settings.header_text_color}}"
+    >
     {%- if section.settings.menu != blank -%}
     {%- for link in section.settings.menu.links -%}
     {%- if link.links == blank -%}
@@ -41,7 +43,9 @@
     </a>
   </div>
 
-  <ul class="header1__collections-nav" style="color: {{settings.header_text_color}}">
+  <ul class="header1__collections-nav"
+     style="color: {{settings.header_text_color}}"
+    >
     {%- if section.settings.menu_two != blank -%}
     {%- for link in section.settings.menu_two.links -%}
     {%- if link.links == blank -%}
