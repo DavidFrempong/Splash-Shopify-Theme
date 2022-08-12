@@ -40,9 +40,22 @@
 .product-highlight__title--xl {
     font-size: 6rem;
 }
+
+.product-highlight-aligned--left{
+text-align: left;
+}
+
+.product-highlight-aligned--center{
+text-align: center;
+}
+
+.product-highlight-aligned--right{
+text-align: right;
+}
+
 </style>
 
-<div class="product-highlight" style="background-color: {{section.settings.background}}">
+<div class="product-highlight product-highlight-aligned--{{ section.settings.info_alignment }}" style="background-color: {{section.settings.background}}">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6">
