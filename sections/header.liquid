@@ -2,7 +2,7 @@
 {% when 'header1' %}
   {{ 'Header1.css' | asset_url | stylesheet_tag }}
 <!-- STARTING HEADER 1 -->
-<header class="header header1">
+<header class="header header1" style="background-color: {{settings.header_bg}}">
 
   <ul class="header1__collections-nav">
     {%- if section.settings.menu != blank -%}
