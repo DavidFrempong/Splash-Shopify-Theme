@@ -125,7 +125,7 @@ table {
     border-spacing: 0;
 }
 .header1 {
-    background: #fcfcfc;
+    /* background: #fcfcfc; */
     color: #1b1b1b;
     display: flex;
     justify-content: space-between;

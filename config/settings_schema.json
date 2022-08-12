@@ -15,7 +15,7 @@
         "content": "Background of navigation bar"
       },
       {
-        "type": "color",
+        "type": "color_background",
         "id": "header_bg",
         "default": "#f7f9fd",
         "label": "Navigation Bar Background",
