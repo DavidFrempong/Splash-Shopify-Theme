@@ -15,6 +15,7 @@
     color: #e63b49;
 }
 .header2__collections-nav {
+    display: flex;
     margin-bottom: 0;
     padding-left: 0;
 }
