@@ -20,12 +20,12 @@
     justify-content: center;
 }
 .hero1--aligned-left .hero1__content-container {
-    justify-content: flex-start;
-    padding-left: 20rem;
+    justify-content: flex-end;
+    padding-left: 50rem;
 }
 .hero1--aligned-right .hero1__content-container {
-    justify-content: flex-end;
-    padding-right: 20rem;
+    justify-content: flex-start;
+    padding-right: 50rem;
 }
 .hero1__bg {
     position: absolute;
@@ -57,7 +57,7 @@
     align-items: center;
 }
 .hero1__title {
-    font-size: 3rem;
+    /* font-size: 3rem; */
     font-family: "Bebas Neue", cursive;
     color: #fff;
 }
