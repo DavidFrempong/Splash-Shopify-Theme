@@ -1,23 +1,26 @@
 {{ 'Hero2.css' | asset_url | stylesheet_tag }}
 
-<div class="hero hero2 hero2--aligned-{{ section.settings.hero_height }}">
+<div class="hero hero2 hero2--{{ section.settings.hero_height }}">
     <div class="hero2__collection1">
     
-        {%- if section.settings.image1 != blank -%}
-        <img srcset="{%- if section.settings.image.width >= 165 -%}{{ section.settings.image1 | image_url: width: 165 }} 165w,{%- endif -%}
-          {%- if section.settings.image1.width >= 360 -%}{{ section.settings.image1 | image_url: width: 360 }} 360w,{%- endif -%}
-          {%- if section.settings.image1.width >= 535 -%}{{ section.settings.image1 | image_url: width: 535 }} 535w,{%- endif -%}
-          {%- if section.settings.image1.width >= 750 -%}{{ section.settings.image1 | image_url: width: 750 }} 750w,{%- endif -%}
-          {%- if section.settings.image1.width >= 1070 -%}{{ section.settings.image1 | image_url: width: 2000 }} 2000w,{%- endif -%}
-          {%- if section.settings.image1.width >= 1500 -%}{{ section.settings.image1 | image_url: width: 2500 }} 2500w,{%- endif -%}
-          {{ section.settings.image1 | image_url }} {{ section.settings.image1.width }}w"
-            src="{{ section.settings.image1 | image_url: width: 2000 }}"
-            sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
-            alt="{{ section.settings.image1.alt | escape }}" loading="lazy" width="{{ section.settings.image1.width }}"
-            height="{{ section.settings.image1.height }}" class="hero1__bg">
-        {%- else -%}
-        {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-        {%- endif -%}
+		{%- if section.settings.image1 != blank -%}
+      <img srcset="{%- if section.settings.image1.width >= 165 -%}{{ section.settings.image1 | img_url: '165x' }} 165w,{%- endif -%}
+        {%- if section.settings.image1.width >= 360 -%}{{ section.settings.image1 | img_url: '360x' }} 360w,{%- endif -%}
+        {%- if section.settings.image1.width >= 535 -%}{{ section.settings.image1 | img_url: '535x' }} 535w,{%- endif -%}
+        {%- if section.settings.image1.width >= 720 -%}{{ section.settings.image1 | img_url: '720x' }} 720w,{%- endif -%}
+        {%- if section.settings.image1.width >= 940 -%}{{ section.settings.image1 | img_url: '940x' }} 940w,{%- endif -%}
+        {%- if section.settings.image1.width >= 1070 -%}{{ section.settings.image1 | img_url: '2000x' }} 2000w{%- endif -%}"
+        src="{{ section.settings.image1 | img_url: '533x' }}"
+        sizes="(min-width: 1100px) 2000px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+        alt="{{ section.settings.image1.alt | escape }}"
+        loading="lazy"
+        width="{{ section.settings.image1.width }}"
+        height="{{ section.settings.image1.height }}"
+        class="hero2__bg"
+      >
+    {%- else -%}
+      {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+    {%- endif -%}
     
         {% assign opacity1 = section.settings.opacity1 | divided_by: 100.00 %}
         
@@ -38,21 +41,23 @@
     <div class="hero2__collection2">
 
         {%- if section.settings.image2 != blank -%}
-        <img srcset="{%- if section.settings.image2.width >= 165 -%}{{ section.settings.image2 | image_url: width: 165 }} 165w,{%- endif -%}
-      {%- if section.settings.image2.width >= 360 -%}{{ section.settings.image2 | image_url: width: 360 }} 360w,{%- endif -%}
-      {%- if section.settings.image2.width >= 535 -%}{{ section.settings.image2 | image_url: width: 535 }} 535w,{%- endif -%}
-      {%- if section.settings.image2.width >= 750 -%}{{ section.settings.image2 | image_url: width: 750 }} 750w,{%- endif -%}
-      {%- if section.settings.image2.width >= 1070 -%}{{ section.settings.image2 | image_url: width: 2000 }} 2000w,{%- endif -%}
-      {%- if section.settings.image2.width >= 1500 -%}{{ section.settings.image2 | image_url: width: 2500 }} 2500w,{%- endif -%}
-      {{ section.settings.image2 | image_url }} {{ section.settings.image2.width }}w"
-            src="{{ section.settings.image2 | image_url: width: 2000 }}"
-            sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
-            alt="{{ section.settings.image2.alt | escape }}" loading="lazy"
-            width="{{ section.settings.image2.width }}" height="{{ section.settings.image2.height }}"
-            class="hero1__bg">
-        {%- else -%}
-        {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-        {%- endif -%}
+      <img srcset="{%- if section.settings.image2.width >= 165 -%}{{ section.settings.image2 | img_url: '165x' }} 165w,{%- endif -%}
+        {%- if section.settings.image2.width >= 360 -%}{{ section.settings.image2 | img_url: '360x' }} 360w,{%- endif -%}
+        {%- if section.settings.image2.width >= 535 -%}{{ section.settings.image2 | img_url: '535x' }} 535w,{%- endif -%}
+        {%- if section.settings.image2.width >= 720 -%}{{ section.settings.image2 | img_url: '720x' }} 720w,{%- endif -%}
+        {%- if section.settings.image2.width >= 940 -%}{{ section.settings.image2 | img_url: '940x' }} 940w,{%- endif -%}
+        {%- if section.settings.image2.width >= 1070 -%}{{ section.settings.image2 | img_url: '2000x' }} 2000w{%- endif -%}"
+        src="{{ section.settings.image2 | img_url: '533x' }}"
+        sizes="(min-width: 1100px) 2000px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+        alt="{{ section.settings.image2.alt | escape }}"
+        loading="lazy"
+        width="{{ section.settings.image2.width }}"
+        height="{{ section.settings.image2.height }}"
+        class="hero2__bg"
+      >
+    {%- else -%}
+      {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+    {%- endif -%}
 
         {% assign opacity2 = section.settings.opacity2 | divided_by: 100.00 %}
         <div class="hero2__content-container" style="background-color: {{section.settings.background2 | color_modify: 'alpha', opacity2}}">
@@ -106,7 +111,7 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
 					"value": "75vh",
 					"label": "75%"
 				},
-        {
+      			{
 					"value": "100vh",
 					"label": "100%"
 				}
@@ -114,6 +119,10 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
 			"default": "100vh",
 			"label": "Height"
 		},
+		{
+			"type": "header",
+			"content": "Left side"
+		},	  
 		{
 			"type": "image_picker",
 			"id": "image1",
@@ -146,6 +155,10 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
 			"id": "button_link1",
 			"label": "Link"
 		},
+		{
+			"type": "header",
+			"content": "Right side"
+		},	 
 		{
 			"type": "image_picker",
 			"id": "image2",
