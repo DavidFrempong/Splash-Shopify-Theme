@@ -44,7 +44,7 @@
           "type": "heading",
           "settings": {
             "title": "Title",
-            "title_size": "100vh"
+            "title_size": "lg"
           }
         },
         "1660074830327ce8e8-1": {
@@ -67,8 +67,9 @@
         "1660074830327ce8e8-2"
       ],
       "settings": {
-        "hero_height": "100vh",
+        "hero_height": "75vh",
         "background": "#000000",
+        "text_color": "#FFFFFF",
         "opacity": 100,
         "info_alignment": "center"
       }
@@ -260,6 +261,7 @@
       "settings": {
         "hero_height": "50vh",
         "background": "#000000",
+        "text_color": "#FFFFFF",
         "opacity": 50,
         "info_alignment": "center"
       }
