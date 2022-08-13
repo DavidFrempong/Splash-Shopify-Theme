@@ -80,19 +80,19 @@
         "16600748576ab52966-0": {
           "type": "featured_collection",
           "settings": {
-            "collection": "adidas"
+            "collection": ""
           }
         },
         "16600748576ab52966-1": {
           "type": "featured_collection",
           "settings": {
-            "collection": "nike"
+            "collection": ""
           }
         },
         "16600748576ab52966-2": {
           "type": "featured_collection",
           "settings": {
-            "collection": "sale"
+            "collection": ""
           }
         }
       },
@@ -147,19 +147,11 @@
         "opacity": 100,
         "show_title": true,
         "show_price": true,
-        "info_alignment": "right",
         "xxl_col": "col-xxl-3",
         "xl_col": "col-xl-3",
         "lg_col": "col-lg-3",
         "md_col": "col-md-3",
-        "sm_col": "col-sm-6",
-        "desktop_image_width": "medium",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "sm_col": "col-sm-6"
       }
     },
     "featured_collection": {
@@ -214,19 +206,11 @@
         "opacity": 100,
         "show_title": true,
         "show_price": true,
-        "info_alignment": "right",
         "xxl_col": "col-xxl-3",
         "xl_col": "col-xl-3",
         "lg_col": "col-lg-3",
         "md_col": "col-md-3",
-        "sm_col": "col-sm-6",
-        "desktop_image_width": "medium",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "sm_col": "col-sm-6"
       }
     },
     "16601032124033fed3": {
