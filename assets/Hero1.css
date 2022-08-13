@@ -21,11 +21,11 @@
 }
 .hero1--aligned-left .hero1__content-container {
     justify-content: flex-start;
-    padding-right: 25rem;
+    padding-left: 1rem;
 }
 .hero1--aligned-right .hero1__content-container {
     justify-content: flex-end;
-    padding-left: 25rem;
+    padding-right: 1rem;
 }
 .hero1__bg {
     position: absolute;
