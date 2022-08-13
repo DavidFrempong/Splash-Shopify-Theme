@@ -20,12 +20,12 @@
     justify-content: center;
 }
 .hero1--aligned-left .hero1__content-container {
-    justify-content: flex-end;
-    padding-left: 50rem;
+    justify-content: flex-start;
+    padding-left: 35rem;
 }
 .hero1--aligned-right .hero1__content-container {
-    justify-content: flex-start;
-    padding-right: 50rem;
+    justify-content: flex-end;
+    padding-right: 35rem;
 }
 .hero1__bg {
     position: absolute;

@@ -19,7 +19,7 @@
         {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
         {%- endif -%}
     
-        {% assign opacity1 = section.settings.opacity1 | divided_by: 1000.00 %}
+        {% assign opacity1 = section.settings.opacity1 | divided_by: 100.00 %}
         
         <div class="hero2__content-container" style="background-color: {{section.settings.background1 | color_modify: 'alpha', opacity1}}">
             <div class="hero2__info">
@@ -54,7 +54,7 @@
         {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
         {%- endif -%}
 
-        {% assign opacity2 = section.settings.opacity2 | divided_by: 1000.00 %}
+        {% assign opacity2 = section.settings.opacity2 | divided_by: 100.00 %}
         <div class="hero2__content-container" style="background-color: {{section.settings.background2 | color_modify: 'alpha', opacity2}}">
             <div class="hero2__info">
                 {%- if section.settings.button_label2 != blank -%}
