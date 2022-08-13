@@ -68,8 +68,8 @@
       ],
       "settings": {
         "hero_height": "75vh",
-        "background": "#000000",
-        "text_color": "#FFFFFF",
+        "background": "#0e0e0e",
+        "text_color": "#ffffff",
         "opacity": 100,
         "info_alignment": "center"
       }
@@ -261,7 +261,7 @@
       "settings": {
         "hero_height": "50vh",
         "background": "#000000",
-        "text_color": "#FFFFFF",
+        "text_color": "#ffffff",
         "opacity": 50,
         "info_alignment": "center"
       }
