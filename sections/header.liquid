@@ -137,10 +137,10 @@
   </svg>
 
 
-  
+
   {% when 'header1' %}
 
-    <header class="header header1 ">
+    <header class="header header1" style="background-color: {{settings.header_bg}}; color: {{settings.header_text_color}}">
       {%- if section.settings.menu != blank -%}
         <header-drawer data-breakpoint="tablet">
           <details id="Details-menu-drawer-container" class="menu-drawer-container">
@@ -316,10 +316,10 @@
           <details>
             <summary class="header__icon header__icon--search header__icon--summary link focus-inset modal__toggle" aria-haspopup="dialog" aria-label="{{ 'general.search.search' | t }}">
               <span>
-                <svg class="modal__toggle-open icon icon-search" aria-hidden="true" focusable="false" role="presentation">
+                <svg class="modal__toggle-open icon icon-search" aria-hidden="true" focusable="false" role="presentation" style="color: {{settings.header_text_color}}">
                   <use href="#icon-search">
                 </svg>
-                <svg class="modal__toggle-close icon icon-close" aria-hidden="true" focusable="false" role="presentation">
+                <svg class="modal__toggle-close icon icon-close" aria-hidden="true" focusable="false" role="presentation" style="color: {{settings.header_text_color}}">
                   <use href="#icon-close">
                 </svg>
               </span>
@@ -389,7 +389,7 @@
       {%- if request.page_type == 'index' -%}
         <h1 class="header__heading">
       {%- endif -%}
-          <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
+          <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset" style="color: {{settings.header_text_color}}">
             {%- if section.settings.logo != blank -%}
               {%- assign logo_alt = section.settings.logo.alt | default: shop.name | escape -%}
               {%- assign logo_height = section.settings.logo_width | divided_by: section.settings.logo.aspect_ratio -%}
@@ -425,7 +425,7 @@
                           {%- for childlink in link.links -%}
                             <li>
                               {%- if childlink.links == blank -%}
-                                <a href="{{ childlink.url }}" class="header__menu-item list-menu__item link link--text focus-inset caption-large{% if childlink.current %} list-menu__item--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
+                                <a href="{{ childlink.url }}" class="header__menu-item list-menu__item link link--text focus-inset caption-large{% if childlink.current %} list-menu__item--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %} style="color: {{settings.header_text_color}}">
                                   {{ childlink.title | escape }}
                                 </a>
                               {%- else -%}
@@ -437,7 +437,7 @@
                                   <ul id="HeaderMenu-SubMenuList-{{ forloop.index }}" class="header__submenu list-menu motion-reduce">
                                     {%- for grandchildlink in childlink.links -%}
                                       <li>
-                                        <a href="{{ grandchildlink.url }}" class="header__menu-item list-menu__item link link--text focus-inset caption-large{% if grandchildlink.current %} list-menu__item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                                        <a href="{{ grandchildlink.url }}" style="color: {{settings.header_text_color}}" class="header__menu-item list-menu__item link link--text focus-inset caption-large{% if grandchildlink.current %} list-menu__item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
                                           {{ grandchildlink.title | escape }}
                                         </a>
                                       </li>
@@ -451,7 +451,7 @@
                       </details>
                     </header-menu>
                   {%- else -%}
-                    <a href="{{ link.url }}" class="header__menu-item header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
+                    <a href="{{ link.url }}" style="color: {{settings.header_text_color}}" class="header__menu-item header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
                       <span {%- if link.current %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
                     </a>
                   {%- endif -%}
@@ -475,14 +475,14 @@
                           <ul class="mega-menu__list page-width{% if link.levels == 1 %} mega-menu__list--condensed{% endif %}" role="list">
                             {%- for childlink in link.links -%}
                               <li>
-                                <a href="{{ childlink.url }}" class="mega-menu__link mega-menu__link--level-2 link{% if childlink.current %} mega-menu__link--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
+                                <a href="{{ childlink.url }}" style="color: {{settings.header_text_color}}" class="mega-menu__link mega-menu__link--level-2 link{% if childlink.current %} mega-menu__link--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
                                   {{ childlink.title | escape }}
                                 </a>
                                 {%- if childlink.links != blank -%}
                                   <ul class="list-unstyled" role="list">
                                     {%- for grandchildlink in childlink.links -%}
                                       <li>
-                                        <a href="{{ grandchildlink.url }}" class="mega-menu__link link{% if grandchildlink.current %} mega-menu__link--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                                        <a href="{{ grandchildlink.url }}" style="color: {{settings.header_text_color}}" class="mega-menu__link link{% if grandchildlink.current %} mega-menu__link--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
                                           {{ grandchildlink.title | escape }}
                                         </a>
                                       </li>
@@ -496,7 +496,7 @@
                       </details>
                     </header-menu>
                   {%- else -%}
-                    <a href="{{ link.url }}" class="header__menu-item header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
+                    <a href="{{ link.url }}" style="color: {{settings.header_text_color}}" class="header__menu-item header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
                       <span {%- if link.current %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
                     </a>
                   {%- endif -%}
@@ -582,7 +582,7 @@
         </details-modal>
   
         {%- if shop.customer_accounts_enabled -%}
-          <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}">
+          <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" style="color: {{settings.header_text_color}}" class="header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}">
             {% render 'icon-account' %}
             <span class="visually-hidden">
               {%- liquid
@@ -596,7 +596,7 @@
           </a>
         {%- endif -%}
   
-        <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
+        <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble" style="color: {{settings.header_text_color}}">
           {%- liquid
             if cart == empty
               render 'icon-cart-empty'
@@ -635,7 +635,7 @@
   {% when 'header2' %}
 
 <!-- STARTING HEADER 1 -->
-<header class="header header2" style="background-color: {{settings.header_bg}}; color: {{settings.header_text_color}} ">
+<header class="header header2" style="background-color: {{settings.header_bg}}; color: {{settings.header_text_color}}">
 
   <ul class="header1__collections-nav">
     {%- if section.settings.menu != blank -%}
