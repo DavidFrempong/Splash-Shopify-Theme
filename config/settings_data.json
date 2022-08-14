@@ -1,5 +1,8 @@
 {
   "current": {
+    "header_bg": "#f1f1f1",
+    "header_text_color": "#121212",
+    "header_sticky": false,
     "colors_solid_button_labels": "#ffffff",
     "colors_accent_1": "#121212",
     "gradient_accent_1": "",
