@@ -1,5 +1,83 @@
 {
   "sections": {
+    "1660074830c4809a8b": {
+      "type": "hero-one",
+      "blocks": {
+        "1660074830327ce8e8-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Premium Shopify Theme",
+            "title_size": "md"
+          }
+        },
+        "1660074830327ce8e8-1": {
+          "type": "paragraph",
+          "settings": {
+            "paragraph": "Easy, customizable template blocks."
+          }
+        },
+        "1660074830327ce8e8-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Get now",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1660074830327ce8e8-0",
+        "1660074830327ce8e8-1",
+        "1660074830327ce8e8-2"
+      ],
+      "settings": {
+        "hero_height": "75vh",
+        "image": "shopify:\/\/shop_images\/minimalist-retail-clothing-display.jpg",
+        "background": "#0e0e0e",
+        "text_color": "#ffffff",
+        "opacity": 45,
+        "info_alignment": "center"
+      }
+    },
+    "166007485739b9926f": {
+      "type": "collection-group",
+      "blocks": {
+        "16600748576ab52966-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "nike"
+          }
+        },
+        "16600748576ab52966-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "adidas"
+          }
+        },
+        "16600748576ab52966-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "vans"
+          }
+        }
+      },
+      "block_order": [
+        "16600748576ab52966-1",
+        "16600748576ab52966-2",
+        "16600748576ab52966-0"
+      ],
+      "settings": {
+        "container_shape": "circle",
+        "image_fit": "contain",
+        "background": "#ffffff",
+        "opacity": 50,
+        "show_title": true,
+        "xxl_col": "col-xxl-4",
+        "xl_col": "col-xl-4",
+        "lg_col": "col-lg-4",
+        "md_col": "col-md-4",
+        "sm_col": "col-sm-2"
+      }
+    },
     "16601838586da3e29b": {
       "type": "product-highlight",
       "blocks": {
@@ -35,91 +113,6 @@
         "text_color": "#efefef",
         "opacity": 50,
         "info_alignment": "left"
-      }
-    },
-    "1660074830c4809a8b": {
-      "type": "hero-one",
-      "blocks": {
-        "1660074830327ce8e8-0": {
-          "type": "heading",
-          "settings": {
-            "title": "Title",
-            "title_size": "lg"
-          }
-        },
-        "1660074830327ce8e8-1": {
-          "type": "paragraph",
-          "settings": {
-            "paragraph": "This is where your message will be."
-          }
-        },
-        "1660074830327ce8e8-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "1660074830327ce8e8-0",
-        "1660074830327ce8e8-1",
-        "1660074830327ce8e8-2"
-      ],
-      "settings": {
-        "hero_height": "75vh",
-        "background": "#0e0e0e",
-        "text_color": "#ffffff",
-        "opacity": 100,
-        "info_alignment": "center"
-      }
-    },
-    "166007485739b9926f": {
-      "type": "collection-group",
-      "blocks": {
-        "16600748576ab52966-0": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "16600748576ab52966-1": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "16600748576ab52966-2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
-        }
-      },
-      "block_order": [
-        "16600748576ab52966-0",
-        "16600748576ab52966-1",
-        "16600748576ab52966-2"
-      ],
-      "settings": {
-        "container_shape": "square",
-        "image_fit": "contain",
-        "background": "#ffffff",
-        "opacity": 100,
-        "show_title": true,
-        "info_alignment": "right",
-        "xxl_col": "col-xxl-4",
-        "xl_col": "col-xl-4",
-        "lg_col": "col-lg-4",
-        "md_col": "col-md-4",
-        "sm_col": "col-sm-2",
-        "desktop_image_width": "medium",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "1660074841ce3fe930": {
@@ -252,9 +245,9 @@
     }
   },
   "order": [
-    "16601838586da3e29b",
     "1660074830c4809a8b",
     "166007485739b9926f",
+    "16601838586da3e29b",
     "1660074841ce3fe930",
     "1660074900583c2da9",
     "featured_collection",
