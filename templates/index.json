@@ -132,7 +132,7 @@
         "description": "<p>Don't miss out on the newest offers<\/p>",
         "show_description": false,
         "description_style": "body",
-        "collection": "",
+        "collection": "women",
         "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": false,
@@ -195,14 +195,14 @@
         "1660103212e3a46f7d-0": {
           "type": "heading",
           "settings": {
-            "title": "Title",
+            "title": "Your Special offer",
             "title_size": "md"
           }
         },
         "1660103212e3a46f7d-1": {
           "type": "paragraph",
           "settings": {
-            "paragraph": "Example message I ' m baby kogi cardigan kitsch hammock banjo. Typewriter viral man braid hot chicken, farm-to-table fashion axe intelligentsia lomo green juice ramps irony succulents."
+            "paragraph": "Write something here to attract your customers"
           }
         },
         "1660103212e3a46f7d-2": {
@@ -219,7 +219,8 @@
         "1660103212e3a46f7d-2"
       ],
       "settings": {
-        "hero_height": "50vh",
+        "hero_height": "75vh",
+        "image": "shopify:\/\/shop_images\/gas-cooking-range-in-a-large-home-kitchen.jpg",
         "background": "#000000",
         "text_color": "#ffffff",
         "opacity": 50,
