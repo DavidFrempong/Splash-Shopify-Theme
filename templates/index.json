@@ -6,20 +6,20 @@
         "1660074830327ce8e8-0": {
           "type": "heading",
           "settings": {
-            "title": "Premium Shopify Theme",
-            "title_size": "md"
+            "title": "New Sweaters In Stock",
+            "title_size": "sm"
           }
         },
         "1660074830327ce8e8-1": {
           "type": "paragraph",
           "settings": {
-            "paragraph": "Easy, customizable template blocks."
+            "paragraph": "Starting at $19.99."
           }
         },
         "1660074830327ce8e8-2": {
           "type": "button",
           "settings": {
-            "button_label": "Get now",
+            "button_label": "Buy now",
             "button_link": ""
           }
         }
@@ -31,7 +31,7 @@
       ],
       "settings": {
         "hero_height": "75vh",
-        "image": "shopify:\/\/shop_images\/minimalist-retail-clothing-display.jpg",
+        "image": "shopify:\/\/shop_images\/woman-within-clothing-racks.jpg",
         "background": "#0e0e0e",
         "text_color": "#ffffff",
         "opacity": 45,
