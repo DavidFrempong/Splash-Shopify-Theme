@@ -55,6 +55,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 .hero1__title {
     /* font-size: 3rem; */
