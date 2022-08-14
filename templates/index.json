@@ -157,20 +157,20 @@
         "1660183857b7a6ec36-0": {
           "type": "heading",
           "settings": {
-            "title": "Title",
+            "title": "Learn more",
             "title_size": "lg"
           }
         },
         "1660183857b7a6ec36-1": {
           "type": "paragraph",
           "settings": {
-            "paragraph": "Example message I ' m baby kogi cardigan kitsch hammock banjo. Typewriter viral man braid hot chicken, farm-to-table fashion axe intelligentsia lomo green juice ramps irony succulents."
+            "paragraph": "Say something about your special product here."
           }
         },
         "1660183857b7a6ec36-2": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
+            "button_label": "Get started",
             "button_link": ""
           }
         }
@@ -208,7 +208,7 @@
         "1660103212e3a46f7d-2": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
+            "button_label": "Learn more",
             "button_link": ""
           }
         }
