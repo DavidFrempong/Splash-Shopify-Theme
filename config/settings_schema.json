@@ -41,8 +41,8 @@
       {
         "type": "checkbox",
         "id": "header_transparent",
-        "label": "Make Navigation Bar transparent",
-        "default": true
+        "label": "Make Navigation Bar Transparent on Scroll",
+        "default": false
       }
     ]
   },
