@@ -10,6 +10,8 @@
 
 .rte > p:last-child {
   margin-bottom: 0;
+  position: relative;
+  top: 7px;
 }
 
 .rte table {
