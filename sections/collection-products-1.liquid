@@ -130,7 +130,7 @@
                                 class="collection1__product-price">$250</span>
                             <div>
                                 {% for block in section.blocks %}
-                                        {%case.block.type%}
+                                        {% case block.type %}
                                             {% when '@app' %}
                                                 {% render block %}
                                 {% endcase %}
@@ -380,4 +380,13 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
         }
     ]
 }
-{% endschema %}
+{% endschema %}{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{%case.block.type%}"
+  to: "{% case block.type %}"
+  position: 11459..11480
+{%- endcomment -%}
